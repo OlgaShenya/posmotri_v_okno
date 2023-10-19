@@ -39,9 +39,10 @@ ul,
 ol {
   list-style: none;
 }
+
 /* ---------------------------------------------- */
 .content {
-  block-size: 534px;
+  block-size: 537px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -49,24 +50,29 @@ ol {
   gap: 30px;
   inline-size: inherit;
 }
+
 .result {
   block-size: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   gap: 16px;
+  margin-bottom: 3px;
 }
+
 .result__video-container {
   inline-size: 711px;
   block-size: 386px;
   position: relative;
 }
+
 .result__video {
   width: 100%;
   height: 100%;
   object-position: center;
   object-fit: cover;
 }
+
 .search-form {
   display: flex;
   flex-direction: row;
@@ -87,7 +93,7 @@ ol {
 
 .search-form__fieldset-title {
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -116,8 +122,8 @@ ol {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   color: rgba(255, 255, 255, 0.7);
-  font-family: Fira Sans Condensed;
-  font-size: 18px;
+  font-family: inherit;
+  font-size: inherit;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -140,7 +146,7 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 13px;
 }
 
 .search-form__checkbox:checked + span {
@@ -159,15 +165,14 @@ ol {
   cursor: pointer;
   color: #fff;
   text-align: center;
-  font-family: Fira Sans Condensed;
-  font-size: 18px;
+  font-family: inherit;
+  font-size: inherit;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   border: 1px solid #fff;
   background-color: transparent;
   height: 34px;
-  margin: 3px;
 }
 
 .button:focus {
@@ -193,12 +198,12 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 26px;
+  gap: 24px;
 }
 
 .title {
   color: #fff;
-  font-family: Oswald;
+  font-family: "Oswald";
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -270,7 +275,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: "Oswald";
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -280,8 +285,8 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
-  font-size: 18px;
+  font-family: inherit;
+  font-size: inherit;
   font-style: normal;
   font-weight: 400;
   line-height: 90%; /* 16.2px */
@@ -294,7 +299,13 @@ ol {
 }
 
 .more-button {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.more-button:focus-visible {
   width: calc(100% - 6px);
+  margin: 0 3px 3px 3px;
 }
 
 .visually-hidden {
