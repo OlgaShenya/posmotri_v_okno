@@ -200,7 +200,7 @@ ol {
 
 .title {
   color: #fff;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -241,7 +241,8 @@ ol {
   margin: 2px;
 }
 
-.content__card-link_current {
+.content__card-link_current,
+.content__card-link:active {
   background-color: #545050;
 }
 
@@ -297,6 +298,7 @@ ol {
   line-height: 90%; /* 16.2px */
   text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
   max-width: 200px;
   max-height: 65px;
 }
